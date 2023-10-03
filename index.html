@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Timer</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Multiple Timers App</h2>
+        </div>
+
+        <div class="card">
+            <div class="card-text">Set Time:</div>
+
+            <div class="total-time">
+                <h1 class="timer-display" id="timer-display">hh : mm : ss</h1>
+            </div>
+
+            <div class="btn">
+                <button class="set-btn" onclick="startNewTimer()">Set</button>
+            </div>
+        </div>
+
+        <div class="middle">
+            <button class="c-timer" onclick="showActiveTimers()">Current Timers</button>
+            <audio id="audio-alert" src="alarm.mp3"></audio>
+        </div>
+
+        <div class="content" id="active-timers">
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('timer-display').innerText = formatTime(0);
+    </script>
+</body>
+</html>

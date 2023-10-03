@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    color: white;
+    background-color: #1d1d23;
+    border-radius: 50px;
+}
+
+.container {
+    gap: 25px;
+    padding: 60px 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.middle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    padding: 20px 0px;
+}
+
+.card,
+.timer {
+    justify-content: space-between;
+    width: 600px;
+    display: flex;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #34344A;
+}
+
+.content {
+    gap: 25px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.c-timer {
+    width: 30%;
+    display: flex;
+    height: 43px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 30px;
+    color: white;
+    border: none;
+    border-radius: 26px;
+    background-color: #39393E;
+}
+
+.set-btn {
+    cursor: pointer;
+    box-shadow: 4px 4px 10px rgb(90, 90, 90);
+    width: 70%;
+    padding: 10px;
+    border-radius: 26px;
+    background-color: #F0F757;
+    border: none;
+}
+
+.stop-btn {
+    cursor: pointer;
+    box-shadow: 4px 4px 10px rgb(90, 90, 90);
+    width: 70%;
+    padding: 10px;
+    border-radius: 26px;
+    background-color: #F0F757;
+    border: none;
+}
+
+.card-text {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 25%;
+}
+
+.total-time {
+    text-align: center;
+    width: 50%;
+}
+
+.btn {
+    text-align: end;
+    width: 25%;
+}
+
+.timer {
+    border: 2px solid hotpink;
+}
+
+.timer-display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.timer-ended {
+    justify-content: end;
+    background-color: #F0F757;
+}
+
+.after-zero {
+    cursor: pointer;
+    width: 70%;
+    padding: 10px;
+    border-radius: 26px;
+    border: none;
+    background: #34344a;
+    color: white;
+}
+
+.after-zero-text {
+    padding-right: 13%;
+    font-size: 2em;
+    font-weight: bold;
+    color: #34344a;
+}
+
+
+@media screen and (max-width:1200px) {
+
+    .card,
+    .timer,
+    .card-text,
+    .btn {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card {
+        gap: 20px;
+        width: 50%;
+    }
+
+    .timer-display,
+    .total-time,
+    .card-text,
+    .btn {
+        width: 100%;
+    }
+
+    .container {
+        width: 103%;
+    }
+
+    .btn {
+        text-align: center;
+    }
+
+    .set-btn {
+        min-width: 100px;
+    }
+
+    .after-zero-text {
+        padding: 0;
+    }
+
+    .timer {
+        gap: 20px;
+        width: 50%;
+    }
+}
